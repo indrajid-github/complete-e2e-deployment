@@ -51,7 +51,7 @@ pipeline
                     """
                     withCredentials([gitUsernamePassword(credentialsId: 'github_tocken', gitToolName: 'Default')]) 
                     {
-                        
+                        sh "git checkout -b master"
                         sh "git push origin master"
                     }
             }
