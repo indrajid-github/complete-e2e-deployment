@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: complete-prodcution-e2e-pipeline:1.0.0-37
+  name: frontend-application
 spec:
   minReadySeconds: 30
   revisionHistoryLimit: 5
