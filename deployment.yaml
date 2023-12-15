@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: complete-prodcution-e2e-pipeline 
+  name: complete-prodcution-e2e-pipeline:1.0.0-37
 spec:
   minReadySeconds: 30
   revisionHistoryLimit: 5
@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: webapp-new
-        image: uriyapraba/complete-prodcution-e2e-pipeline:1.0.0-20
+        image: uriyapraba/complete-prodcution-e2e-pipeline:1.0.0-37
         ports:
         - containerPort: 8080
           protocol: TCP
